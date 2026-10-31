@@ -1,0 +1,13 @@
+{
+  "name": "design-system",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "nuxt",
+  "workspaceFolder": "/app",
+  "forwardPorts": [3000],
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": ["Vue.volar"]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "design-system",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "nuxt dev --host 0.0.0.0",
+    "build": "nuxt build",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.0",
+    "nuxt": "^4.0.0"
+  }
+}

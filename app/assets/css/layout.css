@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+  grid-template-columns:
+    [full-start]
+      minmax(var(--content-padding), 1fr)
+      [breakout-start]
+        minmax(0, var(--breakout-size))
+        [content-start]
+          min(100% - (var(--content-padding) * 2), var(--content-max-width))
+        [content-end]
+        minmax(0, var(--breakout-size))
+      [breakout-end]
+      minmax(var(--content-padding), 1fr)
+    [full-end];
+  min-width: var(--min-grid-width);
+
+  & > .breakout {
+    grid-column: breakout;
+  }
+
+  & > :not(.breakout, .full) {
+    grid-column: content;
+  }
+
+  & > .full {
+    grid-column: full;
+  }
+}
+
+inner-grid {
+  display: grid;
+  grid-template-columns:
+    [inner-start]
+      minmax(var(--content-padding), 1fr)
+      [inner-content-start]
+        min(100% - (var(--content-padding) * 2), var(--content-max-width))
+      [inner-content-end]
+      minmax(var(--content-padding), 1fr)
+    [inner-end];
+}
