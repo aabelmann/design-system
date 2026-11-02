@@ -1,0 +1,207 @@
+:root {
+  /* PRIMARY */
+  --primary-50:  oklch(from var(--color-primary) clamp(0%, calc(l + 45%), 100%) calc(c * .08) h);
+  --primary-100: oklch(from var(--color-primary) clamp(0%, calc(l + 38%), 100%) calc(c * .15) h);
+  --primary-200: oklch(from var(--color-primary) clamp(0%, calc(l + 30%), 100%) calc(c * .25) h);
+  --primary-300: oklch(from var(--color-primary) clamp(0%, calc(l + 20%), 100%) calc(c * .45) h);
+  --primary-400: oklch(from var(--color-primary) clamp(0%, calc(l + 10%), 100%) calc(c * .75) h);
+  --primary-500: var(--color-primary);
+  --primary-600: oklch(from var(--color-primary) clamp(0%, calc(l - 10%), 100%) calc(c * .95) h);
+  --primary-700: oklch(from var(--color-primary) clamp(0%, calc(l - 20%), 100%) calc(c * .85) h);
+  --primary-800: oklch(from var(--color-primary) clamp(0%, calc(l - 30%), 100%) calc(c * .65) h);
+  --primary-900: oklch(from var(--color-primary) clamp(0%, calc(l - 40%), 100%) calc(c * .45) h);
+  --primary-950: oklch(from var(--color-primary) clamp(0%, calc(l - 48%), 100%) calc(c * .25) h);
+
+  /* SECONDARY */
+  --secondary-50:  oklch(from var(--color-secondary) clamp(0%, calc(l + 45%), 100%) calc(c * .08) h);
+  --secondary-100: oklch(from var(--color-secondary) clamp(0%, calc(l + 38%), 100%) calc(c * .15) h);
+  --secondary-200: oklch(from var(--color-secondary) clamp(0%, calc(l + 30%), 100%) calc(c * .25) h);
+  --secondary-300: oklch(from var(--color-secondary) clamp(0%, calc(l + 20%), 100%) calc(c * .45) h);
+  --secondary-400: oklch(from var(--color-secondary) clamp(0%, calc(l + 10%), 100%) calc(c * .75) h);
+  --secondary-500: var(--color-secondary);
+  --secondary-600: oklch(from var(--color-secondary) clamp(0%, calc(l - 10%), 100%) calc(c * .95) h);
+  --secondary-700: oklch(from var(--color-secondary) clamp(0%, calc(l - 20%), 100%) calc(c * .85) h);
+  --secondary-800: oklch(from var(--color-secondary) clamp(0%, calc(l - 30%), 100%) calc(c * .65) h);
+  --secondary-900: oklch(from var(--color-secondary) clamp(0%, calc(l - 40%), 100%) calc(c * .45) h);
+  --secondary-950: oklch(from var(--color-secondary) clamp(0%, calc(l - 48%), 100%) calc(c * .25) h);
+
+  /* ACCENT */
+  --accent-50:  oklch(from var(--color-accent) clamp(0%, calc(l + 45%), 100%) calc(c * .08) h);
+  --accent-100: oklch(from var(--color-accent) clamp(0%, calc(l + 38%), 100%) calc(c * .15) h);
+  --accent-200: oklch(from var(--color-accent) clamp(0%, calc(l + 30%), 100%) calc(c * .25) h);
+  --accent-300: oklch(from var(--color-accent) clamp(0%, calc(l + 20%), 100%) calc(c * .45) h);
+  --accent-400: oklch(from var(--color-accent) clamp(0%, calc(l + 10%), 100%) calc(c * .75) h);
+  --accent-500: var(--color-accent);
+  --accent-600: oklch(from var(--color-accent) clamp(0%, calc(l - 10%), 100%) calc(c * .95) h);
+  --accent-700: oklch(from var(--color-accent) clamp(0%, calc(l - 20%), 100%) calc(c * .85) h);
+  --accent-800: oklch(from var(--color-accent) clamp(0%, calc(l - 30%), 100%) calc(c * .65) h);
+  --accent-900: oklch(from var(--color-accent) clamp(0%, calc(l - 40%), 100%) calc(c * .45) h);
+  --accent-950: oklch(from var(--color-accent) clamp(0%, calc(l - 48%), 100%) calc(c * .25) h);
+
+  /* NEUTRAL */
+  --neutral-50:  oklch(from var(--color-neutral) clamp(0%, calc(l + 45%), 100%) calc(c * .08) h);
+  --neutral-100: oklch(from var(--color-neutral) clamp(0%, calc(l + 38%), 100%) calc(c * .15) h);
+  --neutral-200: oklch(from var(--color-neutral) clamp(0%, calc(l + 30%), 100%) calc(c * .25) h);
+  --neutral-300: oklch(from var(--color-neutral) clamp(0%, calc(l + 20%), 100%) calc(c * .45) h);
+  --neutral-400: oklch(from var(--color-neutral) clamp(0%, calc(l + 10%), 100%) calc(c * .75) h);
+  --neutral-500: var(--color-neutral);
+  --neutral-600: oklch(from var(--color-neutral) clamp(0%, calc(l - 10%), 100%) calc(c * .95) h);
+  --neutral-700: oklch(from var(--color-neutral) clamp(0%, calc(l - 20%), 100%) calc(c * .85) h);
+  --neutral-800: oklch(from var(--color-neutral) clamp(0%, calc(l - 30%), 100%) calc(c * .65) h);
+  --neutral-900: oklch(from var(--color-neutral) clamp(0%, calc(l - 40%), 100%) calc(c * .45) h);
+  --neutral-950: oklch(from var(--color-neutral) clamp(0%, calc(l - 48%), 100%) calc(c * .25) h);
+
+  /* SEMANTIC PALETTE */
+  --success-100: oklch(from var(--color-success) clamp(0%, calc(l + 38%), 100%) calc(c * .15) h);
+  --success-200: oklch(from var(--color-success) clamp(0%, calc(l + 25%), 100%) calc(c * .3) h);
+  --success-300: oklch(from var(--color-success) clamp(0%, calc(l + 15%), 100%) calc(c * .5) h);
+  --success-400: oklch(from var(--color-success) clamp(0%, calc(l + 8%), 100%) calc(c * .8) h);
+  --success-500: var(--color-success);
+  --success-600: oklch(from var(--color-success) clamp(0%, calc(l - 10%), 100%) calc(c * .9) h);
+  --success-700: oklch(from var(--color-success) clamp(0%, calc(l - 20%), 100%) calc(c * .75) h);
+  --success-800: oklch(from var(--color-success) clamp(0%, calc(l - 30%), 100%) calc(c * .55) h);
+  --success-900: oklch(from var(--color-success) clamp(0%, calc(l - 40%), 100%) calc(c * .35) h);
+
+  --warning-100: oklch(from var(--color-warning) clamp(0%, calc(l + 38%), 100%) calc(c * .15) h);
+  --warning-200: oklch(from var(--color-warning) clamp(0%, calc(l + 25%), 100%) calc(c * .3) h);
+  --warning-300: oklch(from var(--color-warning) clamp(0%, calc(l + 15%), 100%) calc(c * .5) h);
+  --warning-400: oklch(from var(--color-warning) clamp(0%, calc(l + 8%), 100%) calc(c * .8) h);
+  --warning-500: var(--color-warning);
+  --warning-600: oklch(from var(--color-warning) clamp(0%, calc(l - 10%), 100%) calc(c * .9) h);
+  --warning-700: oklch(from var(--color-warning) clamp(0%, calc(l - 20%), 100%) calc(c * .75) h);
+  --warning-800: oklch(from var(--color-warning) clamp(0%, calc(l - 30%), 100%) calc(c * .55) h);
+  --warning-900: oklch(from var(--color-warning) clamp(0%, calc(l - 40%), 100%) calc(c * .35) h);
+
+  --error-100: oklch(from var(--color-error) clamp(0%, calc(l + 38%), 100%) calc(c * .15) h);
+  --error-200: oklch(from var(--color-error) clamp(0%, calc(l + 25%), 100%) calc(c * .3) h);
+  --error-300: oklch(from var(--color-error) clamp(0%, calc(l + 15%), 100%) calc(c * .5) h);
+  --error-400: oklch(from var(--color-error) clamp(0%, calc(l + 8%), 100%) calc(c * .8) h);
+  --error-500: var(--color-error);
+  --error-600: oklch(from var(--color-error) clamp(0%, calc(l - 10%), 100%) calc(c * .9) h);
+  --error-700: oklch(from var(--color-error) clamp(0%, calc(l - 20%), 100%) calc(c * .75) h);
+  --error-800: oklch(from var(--color-error) clamp(0%, calc(l - 30%), 100%) calc(c * .55) h);
+  --error-900: oklch(from var(--color-error) clamp(0%, calc(l - 40%), 100%) calc(c * .35) h);
+
+  --info-100: oklch(from var(--color-info) clamp(0%, calc(l + 38%), 100%) calc(c * .15) h);
+  --info-200: oklch(from var(--color-info) clamp(0%, calc(l + 25%), 100%) calc(c * .3) h);
+  --info-300: oklch(from var(--color-info) clamp(0%, calc(l + 15%), 100%) calc(c * .5) h);
+  --info-400: oklch(from var(--color-info) clamp(0%, calc(l + 8%), 100%) calc(c * .8) h);
+  --info-500: var(--color-info);
+  --info-600: oklch(from var(--color-info) clamp(0%, calc(l - 10%), 100%) calc(c * .9) h);
+  --info-700: oklch(from var(--color-info) clamp(0%, calc(l - 20%), 100%) calc(c * .75) h);
+  --info-800: oklch(from var(--color-info) clamp(0%, calc(l - 30%), 100%) calc(c * .55) h);
+  --info-900: oklch(from var(--color-info) clamp(0%, calc(l - 40%), 100%) calc(c * .35) h);
+
+  /* Page and surfaces */
+  --surface-page: light-dark(var(--neutral-50), var(--neutral-950));
+  --surface-primary: light-dark(var(--neutral-50), var(--neutral-900));
+  --surface-secondary: light-dark(var(--neutral-100), var(--neutral-800));
+  --surface-tertiary: light-dark(var(--neutral-200), var(--neutral-700));
+  --surface-inverted: light-dark(var(--neutral-950), var(--neutral-50));
+
+  /* Text */
+  --text-primary: light-dark(var(--neutral-950), var(--neutral-50));
+  --text-secondary: light-dark(var(--neutral-700), var(--neutral-200));
+  --text-muted: light-dark(var(--neutral-600), var(--neutral-300));
+  --text-inverted: light-dark(var(--neutral-50), var(--neutral-950));
+
+  /* Borders */
+  --border-subtle: light-dark(var(--neutral-200), var(--neutral-800));
+  --border-default: light-dark(var(--neutral-300), var(--neutral-600));
+  --border-strong: light-dark(var(--neutral-400), var(--neutral-500));
+
+  /* Primary actions */
+  --button-primary-bg: var(--primary-600);
+  --button-primary-hover: var(--primary-700);
+  --button-primary-active: var(--primary-800);
+  --button-primary-text: var(--neutral-50);
+
+  /* Secondary actions */
+  --button-secondary-bg: var(--surface-secondary);
+  --button-secondary-hover: var(--surface-tertiary);
+  --button-secondary-text: var(--text-primary);
+
+  /* Links */
+  --link-color: var(--primary-600);
+  --link-hover: var(--primary-700);
+
+  /* Focus */
+  --focus-ring: var(--primary-500);
+
+  /* Semantic UI */
+  --status-success: var(--success-600);
+  --status-success-bg: var(--success-100);
+  --status-warning: var(--warning-600);
+  --status-warning-bg: var(--warning-100);
+  --status-error: var(--error-600);
+  --status-error-bg: var(--error-100);
+  --status-info: var(--info-600);
+  --status-info-bg: var(--info-100);
+
+  /* Transparent colours */
+  --primary-transparent-10:
+    color-mix(in oklch, var(--color-primary) 10%, transparent);
+
+  --primary-transparent-20:
+    color-mix(in oklch, var(--color-primary) 20%, transparent);
+
+  --primary-transparent-50:
+    color-mix(in oklch, var(--color-primary) 50%, transparent);
+
+  --neutral-transparent-10:
+    color-mix(in oklch, var(--color-neutral) 10%, transparent);
+
+  --neutral-transparent-20:
+    color-mix(in oklch, var(--color-neutral) 20%, transparent);
+
+  /* Accessibility */
+  --system-canvas: Canvas;
+  --system-canvas-text: CanvasText;
+  --system-link: LinkText;
+  --system-visited-link: VisitedText;
+  --system-button: ButtonFace;
+  --system-button-text: ButtonText;
+  --system-field: Field;
+  --system-field-text: FieldText;
+  --system-highlight: Highlight;
+  --system-highlight-text: HighlightText;
+  --system-disabled: GrayText;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+@media (forced-colors: active) {
+  :root {
+    color-scheme: light dark;
+  }
+
+  body {
+    background: Canvas;
+    color: CanvasText;
+  }
+
+  a {
+    color: LinkText;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    color: FieldText;
+    background: Field;
+    border-color: ButtonText;
+  }
+
+  :focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+
+}

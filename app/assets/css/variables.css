@@ -1,17 +1,15 @@
 :root {
   interpolate-size: allow-keywords;
-
   color-scheme: light dark;
 
-  --color-black-950: #292927;
-  --color-white-50: #FEFEFE;
-
-  /* Color variations */
-  --color-bg-primary: light-dark(var(--color-white-50), var(--color-black-950));
-  --color-bg-secondary: light-dark(var(--color-black-950), var(--color-white-50));
-
-  --color-text-primary: light-dark(var(--color-black-950), var(--color-white-50));
-  --color-text-secondary: light-dark(var(--color-white-50), var(--color-black-950))
+  --color-primary: #663399;
+  --color-secondary: #e6a23c;
+  --color-accent: #159d91;
+  --color-neutral: #737373;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+  --color-info: #0891b2;
 
   /* Spacing */
   --space-1: 0.25rem;
